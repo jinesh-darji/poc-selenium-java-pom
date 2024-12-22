@@ -1,0 +1,5 @@
+target/*
+AutomationReport/*
+test-output/*
+/target/
+*.log

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UBIX">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.ubix.listeners.CustomListeners" />
+	</listeners>
+
+	<parameter name="headless" value="true" />
+
+	<test thread-count="5" name="Signin Test">
+		<classes>
+			<class name="com.ubix.testcases.signin.SigninTest" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Smoke 1 Test of Model Space">
+		<classes>
+			<class name="com.ubix.testcases.modelSpace.Smoke1Test" />
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="Smoke 2 Test of Model Space">
+		<classes>
+			<class name="com.ubix.testcases.modelSpace.Smoke2Test" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Smoke 3 Test of Model Space">
+		<classes>
+			<class name="com.ubix.testcases.modelSpace.Smoke3Test" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Smoke 4 Test of Model Space">
+		<classes>
+			<class name="com.ubix.testcases.modelSpace.Smoke4Test" />
+		</classes>
+	</test>
+
+	<!--
+	Test -->
+
+</suite>
